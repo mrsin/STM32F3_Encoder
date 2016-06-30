@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccSotiau.s 			page 1
+ARM GAS  /tmp/ccWSeizr.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
   28:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c **** 
   29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****    (#) Use HAL_DMA_GetState() function to return the DMA state and HAL_DMA_GetError() in case of er
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****        detection.
-ARM GAS  /tmp/ccSotiau.s 			page 2
+ARM GAS  /tmp/ccWSeizr.s 			page 2
 
 
   31:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****                     
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
   85:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   *   3. Neither the name of STMicroelectronics nor the names of its contributors
   86:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   *      may be used to endorse or promote products derived from this software
   87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   *      without specific prior written permission.
-ARM GAS  /tmp/ccSotiau.s 			page 3
+ARM GAS  /tmp/ccWSeizr.s 			page 3
 
 
   88:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   *
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  142:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   */
  143:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c **** 
  144:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c **** /** @defgroup DMA_Exported_Functions_Group1 Initialization and de-initialization functions 
-ARM GAS  /tmp/ccSotiau.s 			page 4
+ARM GAS  /tmp/ccWSeizr.s 			page 4
 
 
  145:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****  *  @brief   Initialization and de-initialization functions 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  176:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   {
  177:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****     return HAL_ERROR;
   52              		.loc 1 177 0
-ARM GAS  /tmp/ccSotiau.s 			page 5
+ARM GAS  /tmp/ccWSeizr.s 			page 5
 
 
   53 0012 0123     		movs	r3, #1
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  205:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****                       DMA_CCR_DIR));
  206:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   
  207:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   /* Prepare the DMA Channel configuration */
-ARM GAS  /tmp/ccSotiau.s 			page 6
+ARM GAS  /tmp/ccWSeizr.s 			page 6
 
 
  208:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   tmp |=  hdma->Init.Direction        |
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  120 007a 7B68     		ldr	r3, [r7, #4]
  121 007c 0022     		movs	r2, #0
  122 007e 9A63     		str	r2, [r3, #56]
-ARM GAS  /tmp/ccSotiau.s 			page 7
+ARM GAS  /tmp/ccWSeizr.s 			page 7
 
 
  218:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  233:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   /* Check the DMA handle allocation */
  234:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   if(hdma == NULL)
  164              		.loc 1 234 0
-ARM GAS  /tmp/ccSotiau.s 			page 8
+ARM GAS  /tmp/ccWSeizr.s 			page 8
 
 
  165 0008 7B68     		ldr	r3, [r7, #4]
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  198 003e 0022     		movs	r2, #0
  199 0040 DA60     		str	r2, [r3, #12]
  256:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c **** 
-ARM GAS  /tmp/ccSotiau.s 			page 9
+ARM GAS  /tmp/ccWSeizr.s 			page 9
 
 
  257:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   /* Clear all flags */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  252 00a6 1B68     		ldr	r3, [r3]
  253 00a8 1946     		mov	r1, r3
  254 00aa 844B     		ldr	r3, .L146+32
-ARM GAS  /tmp/ccSotiau.s 			page 10
+ARM GAS  /tmp/ccWSeizr.s 			page 10
 
 
  255 00ac 9942     		cmp	r1, r3
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  309 0110 0223     		movs	r3, #2
  310              	.L30:
  311              		.loc 1 258 0 discriminator 11
-ARM GAS  /tmp/ccSotiau.s 			page 11
+ARM GAS  /tmp/ccWSeizr.s 			page 11
 
 
  312 0112 5360     		str	r3, [r2, #4]
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  366 0178 7B68     		ldr	r3, [r7, #4]
  367 017a 1B68     		ldr	r3, [r3]
  368 017c 1946     		mov	r1, r3
-ARM GAS  /tmp/ccSotiau.s 			page 12
+ARM GAS  /tmp/ccWSeizr.s 			page 12
 
 
  369 017e 504B     		ldr	r3, .L146+36
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  259:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   __HAL_DMA_CLEAR_FLAG(hdma, __HAL_DMA_GET_TE_FLAG_INDEX(hdma));
  423              		.loc 1 259 0 is_stmt 1
  424 01dc 7B68     		ldr	r3, [r7, #4]
-ARM GAS  /tmp/ccSotiau.s 			page 13
+ARM GAS  /tmp/ccWSeizr.s 			page 13
 
 
  425 01de 1B68     		ldr	r3, [r3]
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  479 0248 1CD0     		beq	.L62
  480 024a 7B68     		ldr	r3, [r7, #4]
  481 024c 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/ccSotiau.s 			page 14
+ARM GAS  /tmp/ccWSeizr.s 			page 14
 
 
  482 024e 1946     		mov	r1, r3
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  536 02c8 44040240 		.word	1073873988
  537 02cc 00000240 		.word	1073872896
  538              	.L58:
-ARM GAS  /tmp/ccSotiau.s 			page 15
+ARM GAS  /tmp/ccWSeizr.s 			page 15
 
 
  539 02d0 4FF40043 		mov	r3, #32768
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  593 0330 7B68     		ldr	r3, [r7, #4]
  594 0332 1B68     		ldr	r3, [r3]
  595 0334 1946     		mov	r1, r3
-ARM GAS  /tmp/ccSotiau.s 			page 16
+ARM GAS  /tmp/ccWSeizr.s 			page 16
 
 
  596 0336 894B     		ldr	r3, .L148+28
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  650              	.L80:
  651 039e 4FF40063 		mov	r3, #2048
  652 03a2 02E0     		b	.L99
-ARM GAS  /tmp/ccSotiau.s 			page 17
+ARM GAS  /tmp/ccWSeizr.s 			page 17
 
 
  653              	.L79:
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  706 0400 2DD0     		beq	.L106
  707 0402 7B68     		ldr	r3, [r7, #4]
  708 0404 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/ccSotiau.s 			page 18
+ARM GAS  /tmp/ccWSeizr.s 			page 18
 
 
  709 0406 1946     		mov	r1, r3
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  763 046e 05E0     		b	.L122
  764              	.L103:
  765 0470 4FF48063 		mov	r3, #1024
-ARM GAS  /tmp/ccSotiau.s 			page 19
+ARM GAS  /tmp/ccWSeizr.s 			page 19
 
 
  766 0474 02E0     		b	.L122
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  820 04d2 9942     		cmp	r1, r3
  821 04d4 24D0     		beq	.L130
  822 04d6 7B68     		ldr	r3, [r7, #4]
-ARM GAS  /tmp/ccSotiau.s 			page 20
+ARM GAS  /tmp/ccWSeizr.s 			page 20
 
 
  823 04d8 1B68     		ldr	r3, [r3]
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  877 053e 00BF     		.align	2
  878              	.L148:
  879 0540 00000240 		.word	1073872896
-ARM GAS  /tmp/ccSotiau.s 			page 21
+ARM GAS  /tmp/ccWSeizr.s 			page 21
 
 
  880 0544 08000240 		.word	1073872904
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  922 059e 7047     		bx	lr
  923              		.cfi_endproc
  924              	.LFE126:
-ARM GAS  /tmp/ccSotiau.s 			page 22
+ARM GAS  /tmp/ccWSeizr.s 			page 22
 
 
  926              		.section	.text.HAL_DMA_Start,"ax",%progbits
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  946 0004 00AF     		add	r7, sp, #0
  947              	.LCFI8:
  948              		.cfi_def_cfa_register 7
-ARM GAS  /tmp/ccSotiau.s 			page 23
+ARM GAS  /tmp/ccWSeizr.s 			page 23
 
 
  949 0006 F860     		str	r0, [r7, #12]
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  986 004a 1B68     		ldr	r3, [r3]
  987 004c FA68     		ldr	r2, [r7, #12]
  988 004e 1268     		ldr	r2, [r2]
-ARM GAS  /tmp/ccSotiau.s 			page 24
+ARM GAS  /tmp/ccWSeizr.s 			page 24
 
 
  989 0050 1268     		ldr	r2, [r2]
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1030 000c 3B60     		str	r3, [r7]
  340:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   /* Process locked */
  341:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   __HAL_LOCK(hdma);
-ARM GAS  /tmp/ccSotiau.s 			page 25
+ARM GAS  /tmp/ccWSeizr.s 			page 25
 
 
  1031              		.loc 1 341 0
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  357:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c **** 
  358:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   /* Enable the Half transfer complete interrupt */
  359:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   __HAL_DMA_ENABLE_IT(hdma, DMA_IT_HT);  
-ARM GAS  /tmp/ccSotiau.s 			page 26
+ARM GAS  /tmp/ccWSeizr.s 			page 26
 
 
  1070              		.loc 1 359 0 discriminator 2
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  372:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   * @param  hdma: pointer to a DMA_HandleTypeDef structure that contains
  373:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   *               the configuration information for the specified DMA Channel.
  374:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   *                   
-ARM GAS  /tmp/ccSotiau.s 			page 27
+ARM GAS  /tmp/ccWSeizr.s 			page 27
 
 
  375:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   * @note  After disabling a DMA Channel, a check for wait until the DMA Channel is 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  396:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****     if((HAL_GetTick() - tickstart) > HAL_TIMEOUT_DMA_ABORT)
  1147              		.loc 1 396 0
  1148 0024 FFF7FEFF 		bl	HAL_GetTick
-ARM GAS  /tmp/ccSotiau.s 			page 28
+ARM GAS  /tmp/ccWSeizr.s 			page 28
 
 
  1149 0028 0246     		mov	r2, r0
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1184 006a 7B68     		ldr	r3, [r7, #4]
  1185 006c 0022     		movs	r2, #0
  1186 006e 83F82020 		strb	r2, [r3, #32]
-ARM GAS  /tmp/ccSotiau.s 			page 29
+ARM GAS  /tmp/ccWSeizr.s 			page 29
 
 
  415:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1228 000e 93F82130 		ldrb	r3, [r3, #33]	@ zero_extendqisi2
  1229 0012 022B     		cmp	r3, #2
  1230 0014 05D0     		beq	.L161
-ARM GAS  /tmp/ccSotiau.s 			page 30
+ARM GAS  /tmp/ccWSeizr.s 			page 30
 
 
  430:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   {
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1269 0058 9942     		cmp	r1, r3
  1270 005a 59D0     		beq	.L164
  1271 005c 7B68     		ldr	r3, [r7, #4]
-ARM GAS  /tmp/ccSotiau.s 			page 31
+ARM GAS  /tmp/ccWSeizr.s 			page 31
 
 
  1272 005e 1B68     		ldr	r3, [r3]
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1326 00ca 1B68     		ldr	r3, [r3]
  1327 00cc 1946     		mov	r1, r3
  1328 00ce 594B     		ldr	r3, .L210+44
-ARM GAS  /tmp/ccSotiau.s 			page 32
+ARM GAS  /tmp/ccWSeizr.s 			page 32
 
 
  1329 00d0 9942     		cmp	r1, r3
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1383 012a 3A4B     		ldr	r3, .L210+12
  1384 012c 9942     		cmp	r1, r3
  1385 012e 51D0     		beq	.L188
-ARM GAS  /tmp/ccSotiau.s 			page 33
+ARM GAS  /tmp/ccWSeizr.s 			page 33
 
 
  1386 0130 7B68     		ldr	r3, [r7, #4]
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1440 019c 4FF48053 		mov	r3, #4096
  1441 01a0 1BE0     		b	.L208
  1442              	.L197:
-ARM GAS  /tmp/ccSotiau.s 			page 34
+ARM GAS  /tmp/ccWSeizr.s 			page 34
 
 
  1443              		.loc 1 445 0 discriminator 2
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1488 01ec 7B68     		ldr	r3, [r7, #4]
  1489 01ee 5B6B     		ldr	r3, [r3, #52]
  1490 01f0 002B     		cmp	r3, #0
-ARM GAS  /tmp/ccSotiau.s 			page 35
+ARM GAS  /tmp/ccWSeizr.s 			page 35
 
 
  1491 01f2 03D0     		beq	.L162
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  469:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   */
  470:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c **** HAL_StatusTypeDef HAL_DMA_PollForTransfer(DMA_HandleTypeDef *hdma, uint32_t CompleteLevel, uint32_t
  471:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c **** {
-ARM GAS  /tmp/ccSotiau.s 			page 36
+ARM GAS  /tmp/ccWSeizr.s 			page 36
 
 
  1533              		.loc 1 471 0
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1579 003c 1B68     		ldr	r3, [r3]
  1580 003e 1A46     		mov	r2, r3
  1581 0040 904B     		ldr	r3, .L452+12
-ARM GAS  /tmp/ccSotiau.s 			page 37
+ARM GAS  /tmp/ccWSeizr.s 			page 37
 
 
  1582 0042 9A42     		cmp	r2, r3
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1636 00ac 2023     		movs	r3, #32
  1637 00ae 13E0     		b	.L235
  1638              	.L221:
-ARM GAS  /tmp/ccSotiau.s 			page 38
+ARM GAS  /tmp/ccWSeizr.s 			page 38
 
 
  1639 00b0 0223     		movs	r3, #2
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1688 0104 1A46     		mov	r2, r3
  1689 0106 5F4B     		ldr	r3, .L452+12
  1690 0108 9A42     		cmp	r2, r3
-ARM GAS  /tmp/ccSotiau.s 			page 39
+ARM GAS  /tmp/ccWSeizr.s 			page 39
 
 
  1691 010a 3FD0     		beq	.L240
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1745 0174 13E0     		b	.L258
  1746              	.L244:
  1747 0176 0423     		movs	r3, #4
-ARM GAS  /tmp/ccSotiau.s 			page 40
+ARM GAS  /tmp/ccWSeizr.s 			page 40
 
 
  1748 0178 11E0     		b	.L258
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1794 01c4 72D0     		beq	.L261
  1795 01c6 FB68     		ldr	r3, [r7, #12]
  1796 01c8 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/ccSotiau.s 			page 41
+ARM GAS  /tmp/ccWSeizr.s 			page 41
 
 
  1797 01ca 1946     		mov	r1, r3
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1851 0236 1946     		mov	r1, r3
  1852 0238 194B     		ldr	r3, .L452+40
  1853 023a 9942     		cmp	r1, r3
-ARM GAS  /tmp/ccSotiau.s 			page 42
+ARM GAS  /tmp/ccWSeizr.s 			page 42
 
 
  1854 023c 02D1     		bne	.L271
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1908 02b0 002B     		cmp	r3, #0
  1909 02b2 0CBF     		ite	eq
  1910 02b4 0023     		moveq	r3, #0
-ARM GAS  /tmp/ccSotiau.s 			page 43
+ARM GAS  /tmp/ccWSeizr.s 			page 43
 
 
  1911 02b6 0123     		movne	r3, #1
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  1965 031c 9942     		cmp	r1, r3
  1966 031e 1CD0     		beq	.L291
  1967 0320 FB68     		ldr	r3, [r7, #12]
-ARM GAS  /tmp/ccSotiau.s 			page 44
+ARM GAS  /tmp/ccWSeizr.s 			page 44
 
 
  1968 0322 1B68     		ldr	r3, [r3]
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2022 0382 1340     		ands	r3, r3, r2
  2023 0384 002B     		cmp	r3, #0
  2024 0386 0CBF     		ite	eq
-ARM GAS  /tmp/ccSotiau.s 			page 45
+ARM GAS  /tmp/ccWSeizr.s 			page 45
 
 
  2025 0388 0023     		moveq	r3, #0
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2076 03ea FB68     		ldr	r3, [r7, #12]
  2077 03ec 1B68     		ldr	r3, [r3]
  2078 03ee 1946     		mov	r1, r3
-ARM GAS  /tmp/ccSotiau.s 			page 46
+ARM GAS  /tmp/ccWSeizr.s 			page 46
 
 
  2079 03f0 4F4B     		ldr	r3, .L454+28
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2133              	.L310:
  2134 0458 4FF40063 		mov	r3, #2048
  2135 045c 02E0     		b	.L329
-ARM GAS  /tmp/ccSotiau.s 			page 47
+ARM GAS  /tmp/ccWSeizr.s 			page 47
 
 
  2136              	.L309:
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2190 04bc 24D0     		beq	.L337
  2191 04be FB68     		ldr	r3, [r7, #12]
  2192 04c0 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/ccSotiau.s 			page 48
+ARM GAS  /tmp/ccWSeizr.s 			page 48
 
 
  2193 04c2 1946     		mov	r1, r3
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2247 0534 08040240 		.word	1073873928
  2248 0538 1C040240 		.word	1073873948
  2249 053c 30040240 		.word	1073873968
-ARM GAS  /tmp/ccSotiau.s 			page 49
+ARM GAS  /tmp/ccWSeizr.s 			page 49
 
 
  2250 0540 44040240 		.word	1073873988
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2290 0584 B3F1FF3F 		cmp	r3, #-1
  2291 0588 1AD0     		beq	.L259
  510:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****     {
-ARM GAS  /tmp/ccSotiau.s 			page 50
+ARM GAS  /tmp/ccWSeizr.s 			page 50
 
 
  511:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****       if((Timeout == 0) || ((HAL_GetTick() - tickstart) > Timeout))
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2333 05d2 1340     		ands	r3, r3, r2
  2334 05d4 002B     		cmp	r3, #0
  2335 05d6 14BF     		ite	ne
-ARM GAS  /tmp/ccSotiau.s 			page 51
+ARM GAS  /tmp/ccWSeizr.s 			page 51
 
 
  2336 05d8 0023     		movne	r3, #0
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2380 0626 FB68     		ldr	r3, [r7, #12]
  2381 0628 1B68     		ldr	r3, [r3]
  2382 062a 1946     		mov	r1, r3
-ARM GAS  /tmp/ccSotiau.s 			page 52
+ARM GAS  /tmp/ccWSeizr.s 			page 52
 
 
  2383 062c 624B     		ldr	r3, .L456+20
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2437              		.loc 1 530 0 discriminator 2
  2438 0698 4FF40033 		mov	r3, #131072
  2439 069c 18E0     		b	.L381
-ARM GAS  /tmp/ccSotiau.s 			page 53
+ARM GAS  /tmp/ccWSeizr.s 			page 53
 
 
  2440              	.L369:
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2494 06f8 48D0     		beq	.L385
  2495 06fa FB68     		ldr	r3, [r7, #12]
  2496 06fc 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/ccSotiau.s 			page 54
+ARM GAS  /tmp/ccWSeizr.s 			page 54
 
 
  2497 06fe 1946     		mov	r1, r3
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2551 076a 15E0     		b	.L404
  2552              	.L391:
  2553 076c 2023     		movs	r3, #32
-ARM GAS  /tmp/ccSotiau.s 			page 55
+ARM GAS  /tmp/ccWSeizr.s 			page 55
 
 
  2554 076e 13E0     		b	.L404
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  535:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c **** 
  536:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   }
  537:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   else
-ARM GAS  /tmp/ccSotiau.s 			page 56
+ARM GAS  /tmp/ccWSeizr.s 			page 56
 
 
  538:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   { 
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2655 083a FB68     		ldr	r3, [r7, #12]
  2656 083c 1B68     		ldr	r3, [r3]
  2657 083e 1946     		mov	r1, r3
-ARM GAS  /tmp/ccSotiau.s 			page 57
+ARM GAS  /tmp/ccWSeizr.s 			page 57
 
 
  2658 0840 5A4B     		ldr	r3, .L458+32
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2712              	.L407:
  2713 08a6 0423     		movs	r3, #4
  2714              	.L428:
-ARM GAS  /tmp/ccSotiau.s 			page 58
+ARM GAS  /tmp/ccWSeizr.s 			page 58
 
 
  2715              		.loc 1 540 0 discriminator 96
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2769 090c 1CD0     		beq	.L437
  2770 090e FB68     		ldr	r3, [r7, #12]
  2771 0910 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/ccSotiau.s 			page 59
+ARM GAS  /tmp/ccWSeizr.s 			page 59
 
 
  2772 0912 1946     		mov	r1, r3
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2826              	.L429:
  541:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   
  542:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****     /* The selected Channelx EN bit is cleared (DMA is disabled and 
-ARM GAS  /tmp/ccSotiau.s 			page 60
+ARM GAS  /tmp/ccWSeizr.s 			page 60
 
 
  543:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****     all transfers of half buffer are complete) */
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  554:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   * @brief  Handles DMA interrupt request.
  555:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   * @param  hdma: pointer to a DMA_HandleTypeDef structure that contains
  556:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   *               the configuration information for the specified DMA Channel.  
-ARM GAS  /tmp/ccSotiau.s 			page 61
+ARM GAS  /tmp/ccWSeizr.s 			page 61
 
 
  557:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   * @retval None
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2920 0044 9942     		cmp	r1, r3
  2921 0046 3FD0     		beq	.L465
  2922 0048 7B68     		ldr	r3, [r7, #4]
-ARM GAS  /tmp/ccSotiau.s 			page 62
+ARM GAS  /tmp/ccWSeizr.s 			page 62
 
 
  2923 004a 1B68     		ldr	r3, [r3]
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  2977 00b2 0823     		movs	r3, #8
  2978 00b4 11E0     		b	.L483
  2979              	.L468:
-ARM GAS  /tmp/ccSotiau.s 			page 63
+ARM GAS  /tmp/ccWSeizr.s 			page 63
 
 
  2980 00b6 4FF00063 		mov	r3, #134217728
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3034 0116 2A4B     		ldr	r3, .L742+20
  3035 0118 9942     		cmp	r1, r3
  3036 011a 3FD0     		beq	.L488
-ARM GAS  /tmp/ccSotiau.s 			page 64
+ARM GAS  /tmp/ccWSeizr.s 			page 64
 
 
  3037 011c 7B68     		ldr	r3, [r7, #4]
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3091              	.L492:
  3092 0186 0823     		movs	r3, #8
  3093 0188 2BE0     		b	.L506
-ARM GAS  /tmp/ccSotiau.s 			page 65
+ARM GAS  /tmp/ccWSeizr.s 			page 65
 
 
  3094              	.L491:
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3146 01fe 002B     		cmp	r3, #0
  3147 0200 00F00681 		beq	.L507
  565:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****     {
-ARM GAS  /tmp/ccSotiau.s 			page 66
+ARM GAS  /tmp/ccWSeizr.s 			page 66
 
 
  566:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****       /* Disable the transfer error interrupt */
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3197 0262 1946     		mov	r1, r3
  3198 0264 584B     		ldr	r3, .L744+28
  3199 0266 9942     		cmp	r1, r3
-ARM GAS  /tmp/ccSotiau.s 			page 67
+ARM GAS  /tmp/ccWSeizr.s 			page 67
 
 
  3200 0268 2DD0     		beq	.L514
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3254 02d0 08E0     		b	.L530
  3255              	.L512:
  3256 02d2 4FF40043 		mov	r3, #32768
-ARM GAS  /tmp/ccSotiau.s 			page 68
+ARM GAS  /tmp/ccWSeizr.s 			page 68
 
 
  3257 02d6 05E0     		b	.L530
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3311 0334 1B68     		ldr	r3, [r3]
  3312 0336 1946     		mov	r1, r3
  3313 0338 1C4B     		ldr	r3, .L744
-ARM GAS  /tmp/ccSotiau.s 			page 69
+ARM GAS  /tmp/ccWSeizr.s 			page 69
 
 
  3314 033a 9942     		cmp	r1, r3
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3368 03a0 4FF40063 		mov	r3, #2048
  3369 03a4 1DE0     		b	.L553
  3370              	.L533:
-ARM GAS  /tmp/ccSotiau.s 			page 70
+ARM GAS  /tmp/ccWSeizr.s 			page 70
 
 
  3371 03a6 8023     		movs	r3, #128
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  582:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****       {
  583:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****         /* Transfer error callback */
  584:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****         hdma->XferErrorCallback(hdma);
-ARM GAS  /tmp/ccSotiau.s 			page 71
+ARM GAS  /tmp/ccWSeizr.s 			page 71
 
 
  3414              		.loc 1 584 0
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3462 0460 1946     		mov	r1, r3
  3463 0462 5B4B     		ldr	r3, .L746+28
  3464 0464 9942     		cmp	r1, r3
-ARM GAS  /tmp/ccSotiau.s 			page 72
+ARM GAS  /tmp/ccWSeizr.s 			page 72
 
 
  3465 0466 2DD0     		beq	.L560
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3519 04ce 08E0     		b	.L576
  3520              	.L558:
  3521 04d0 4FF48043 		mov	r3, #16384
-ARM GAS  /tmp/ccSotiau.s 			page 73
+ARM GAS  /tmp/ccWSeizr.s 			page 73
 
 
  3522 04d4 05E0     		b	.L576
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3576 0532 1B68     		ldr	r3, [r3]
  3577 0534 1946     		mov	r1, r3
  3578 0536 264B     		ldr	r3, .L746+28
-ARM GAS  /tmp/ccSotiau.s 			page 74
+ARM GAS  /tmp/ccWSeizr.s 			page 74
 
 
  3579 0538 9942     		cmp	r1, r3
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3633 059e 4FF48023 		mov	r3, #262144
  3634 05a2 22E0     		b	.L599
  3635              	.L581:
-ARM GAS  /tmp/ccSotiau.s 			page 75
+ARM GAS  /tmp/ccWSeizr.s 			page 75
 
 
  3636 05a4 4FF48043 		mov	r3, #16384
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3685 0616 002B     		cmp	r3, #0
  3686 0618 07D1     		bne	.L601
  596:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****       {
-ARM GAS  /tmp/ccSotiau.s 			page 76
+ARM GAS  /tmp/ccWSeizr.s 			page 76
 
 
  597:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****         /* Disable the half transfer interrupt */
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3736 0676 1B68     		ldr	r3, [r3]
  3737 0678 1946     		mov	r1, r3
  3738 067a 884B     		ldr	r3, .L748+28
-ARM GAS  /tmp/ccSotiau.s 			page 77
+ARM GAS  /tmp/ccWSeizr.s 			page 77
 
 
  3739 067c 9942     		cmp	r1, r3
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3793 06e2 4FF48023 		mov	r3, #262144
  3794 06e6 08E0     		b	.L624
  3795              	.L606:
-ARM GAS  /tmp/ccSotiau.s 			page 78
+ARM GAS  /tmp/ccWSeizr.s 			page 78
 
 
  3796 06e8 4FF48043 		mov	r3, #16384
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3850 0748 7B68     		ldr	r3, [r7, #4]
  3851 074a 1B68     		ldr	r3, [r3]
  3852 074c 1946     		mov	r1, r3
-ARM GAS  /tmp/ccSotiau.s 			page 79
+ARM GAS  /tmp/ccWSeizr.s 			page 79
 
 
  3853 074e 4C4B     		ldr	r3, .L748
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3907              	.L628:
  3908 07b6 4FF48063 		mov	r3, #1024
  3909 07ba 02E0     		b	.L647
-ARM GAS  /tmp/ccSotiau.s 			page 80
+ARM GAS  /tmp/ccWSeizr.s 			page 80
 
 
  3910              	.L627:
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  3950 07fa 7B68     		ldr	r3, [r7, #4]
  3951 07fc 1B68     		ldr	r3, [r3]
  3952 07fe 1946     		mov	r1, r3
-ARM GAS  /tmp/ccSotiau.s 			page 81
+ARM GAS  /tmp/ccWSeizr.s 			page 81
 
 
  3953 0800 224B     		ldr	r3, .L748+12
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  4007 086c 0F4B     		ldr	r3, .L748+44
  4008 086e 9942     		cmp	r1, r3
  4009 0870 02D1     		bne	.L659
-ARM GAS  /tmp/ccSotiau.s 			page 82
+ARM GAS  /tmp/ccWSeizr.s 			page 82
 
 
  4010 0872 4FF40053 		mov	r3, #8192
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  4064 08e8 002B     		cmp	r3, #0
  4065 08ea 0CBF     		ite	eq
  4066 08ec 0023     		moveq	r3, #0
-ARM GAS  /tmp/ccSotiau.s 			page 83
+ARM GAS  /tmp/ccWSeizr.s 			page 83
 
 
  4067 08ee 0123     		movne	r3, #1
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  4121 0954 9942     		cmp	r1, r3
  4122 0956 1CD0     		beq	.L679
  4123 0958 7B68     		ldr	r3, [r7, #4]
-ARM GAS  /tmp/ccSotiau.s 			page 84
+ARM GAS  /tmp/ccWSeizr.s 			page 84
 
 
  4124 095a 1B68     		ldr	r3, [r3]
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  4178 09ba 1340     		ands	r3, r3, r2
  4179 09bc 002B     		cmp	r3, #0
  4180 09be 0CBF     		ite	eq
-ARM GAS  /tmp/ccSotiau.s 			page 85
+ARM GAS  /tmp/ccWSeizr.s 			page 85
 
 
  4181 09c0 0023     		moveq	r3, #0
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  4225 0a14 7B68     		ldr	r3, [r7, #4]
  4226 0a16 1B68     		ldr	r3, [r3]
  4227 0a18 1946     		mov	r1, r3
-ARM GAS  /tmp/ccSotiau.s 			page 86
+ARM GAS  /tmp/ccWSeizr.s 			page 86
 
 
  4228 0a1a 2F4B     		ldr	r3, .L750+8
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  4282 0a86 1D4B     		ldr	r3, .L750+44
  4283 0a88 9942     		cmp	r1, r3
  4284 0a8a 02D1     		bne	.L707
-ARM GAS  /tmp/ccSotiau.s 			page 87
+ARM GAS  /tmp/ccWSeizr.s 			page 87
 
 
  4285 0a8c 4FF40053 		mov	r3, #8192
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  4339 0b00 00040240 		.word	1073873920
  4340              	.L696:
  4341              		.loc 1 625 0 discriminator 2
-ARM GAS  /tmp/ccSotiau.s 			page 88
+ARM GAS  /tmp/ccWSeizr.s 			page 88
 
 
  4342 0b04 3C4A     		ldr	r2, .L752
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  4396 0b6e 9942     		cmp	r1, r3
  4397 0b70 14D0     		beq	.L728
  4398 0b72 7B68     		ldr	r3, [r7, #4]
-ARM GAS  /tmp/ccSotiau.s 			page 89
+ARM GAS  /tmp/ccWSeizr.s 			page 89
 
 
  4399 0b74 1B68     		ldr	r3, [r3]
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  4450 0bca 7B68     		ldr	r3, [r7, #4]
  4451 0bcc 9A6B     		ldr	r2, [r3, #56]
  4452 0bce 7B68     		ldr	r3, [r7, #4]
-ARM GAS  /tmp/ccSotiau.s 			page 90
+ARM GAS  /tmp/ccWSeizr.s 			page 90
 
 
  4453 0bd0 9A63     		str	r2, [r3, #56]
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  4492 0c24 44040240 		.word	1073873988
  4493              		.cfi_endproc
  4494              	.LFE132:
-ARM GAS  /tmp/ccSotiau.s 			page 91
+ARM GAS  /tmp/ccWSeizr.s 			page 91
 
 
  4496              		.section	.text.HAL_DMA_GetState,"ax",%progbits
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  4521 0008 7B68     		ldr	r3, [r7, #4]
  4522 000a 93F82130 		ldrb	r3, [r3, #33]	@ zero_extendqisi2
  674:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c **** }
-ARM GAS  /tmp/ccSotiau.s 			page 92
+ARM GAS  /tmp/ccWSeizr.s 			page 92
 
 
  4523              		.loc 1 674 0
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  4568              	.LFE134:
  4570              		.section	.text.DMA_SetConfig,"ax",%progbits
  4571              		.align	2
-ARM GAS  /tmp/ccSotiau.s 			page 93
+ARM GAS  /tmp/ccWSeizr.s 			page 93
 
 
  4572              		.thumb
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  712:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   
  713:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   /* Peripheral to Memory */
  714:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c ****   if((hdma->Init.Direction) == DMA_MEMORY_TO_PERIPH)
-ARM GAS  /tmp/ccSotiau.s 			page 94
+ARM GAS  /tmp/ccWSeizr.s 			page 94
 
 
  4601              		.loc 1 714 0
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  4639              	.Letext0:
  4640              		.file 2 "/usr/include/newlib/machine/_default_types.h"
  4641              		.file 3 "/usr/include/newlib/stdint.h"
-ARM GAS  /tmp/ccSotiau.s 			page 95
+ARM GAS  /tmp/ccWSeizr.s 			page 95
 
 
  4642              		.file 4 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h"
@@ -5646,56 +5646,56 @@ ARM GAS  /tmp/ccSotiau.s 			page 1
  4644              		.file 6 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
  4645              		.file 7 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
  4646              		.file 8 "Drivers/CMSIS/Include/core_cm4.h"
-ARM GAS  /tmp/ccSotiau.s 			page 96
+ARM GAS  /tmp/ccWSeizr.s 			page 96
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f3xx_hal_dma.c
-     /tmp/ccSotiau.s:21     .text.HAL_DMA_Init:0000000000000000 $t
-     /tmp/ccSotiau.s:26     .text.HAL_DMA_Init:0000000000000000 HAL_DMA_Init
-     /tmp/ccSotiau.s:141    .text.HAL_DMA_DeInit:0000000000000000 $t
-     /tmp/ccSotiau.s:146    .text.HAL_DMA_DeInit:0000000000000000 HAL_DMA_DeInit
-     /tmp/ccSotiau.s:525    .text.HAL_DMA_DeInit:000000000000029c $d
-     /tmp/ccSotiau.s:539    .text.HAL_DMA_DeInit:00000000000002d0 $t
-     /tmp/ccSotiau.s:879    .text.HAL_DMA_DeInit:0000000000000540 $d
-     /tmp/ccSotiau.s:893    .text.HAL_DMA_DeInit:0000000000000574 $t
-     /tmp/ccSotiau.s:927    .text.HAL_DMA_Start:0000000000000000 $t
-     /tmp/ccSotiau.s:932    .text.HAL_DMA_Start:0000000000000000 HAL_DMA_Start
-     /tmp/ccSotiau.s:4575   .text.DMA_SetConfig:0000000000000000 DMA_SetConfig
-     /tmp/ccSotiau.s:1005   .text.HAL_DMA_Start_IT:0000000000000000 $t
-     /tmp/ccSotiau.s:1010   .text.HAL_DMA_Start_IT:0000000000000000 HAL_DMA_Start_IT
-     /tmp/ccSotiau.s:1107   .text.HAL_DMA_Abort:0000000000000000 $t
-     /tmp/ccSotiau.s:1112   .text.HAL_DMA_Abort:0000000000000000 HAL_DMA_Abort
-     /tmp/ccSotiau.s:1200   .text.HAL_DMA_Abort_IT:0000000000000000 $t
-     /tmp/ccSotiau.s:1205   .text.HAL_DMA_Abort_IT:0000000000000000 HAL_DMA_Abort_IT
-     /tmp/ccSotiau.s:1509   .text.HAL_DMA_Abort_IT:0000000000000208 $d
-     /tmp/ccSotiau.s:1526   .text.HAL_DMA_PollForTransfer:0000000000000000 $t
-     /tmp/ccSotiau.s:1531   .text.HAL_DMA_PollForTransfer:0000000000000000 HAL_DMA_PollForTransfer
-     /tmp/ccSotiau.s:1888   .text.HAL_DMA_PollForTransfer:0000000000000278 $d
-     /tmp/ccSotiau.s:1901   .text.HAL_DMA_PollForTransfer:00000000000002a8 $t
-     /tmp/ccSotiau.s:2239   .text.HAL_DMA_PollForTransfer:0000000000000514 $d
-     /tmp/ccSotiau.s:2253   .text.HAL_DMA_PollForTransfer:0000000000000548 $t
-     /tmp/ccSotiau.s:2590   .text.HAL_DMA_PollForTransfer:00000000000007a4 $d
-     /tmp/ccSotiau.s:2605   .text.HAL_DMA_PollForTransfer:00000000000007d8 $t
-     /tmp/ccSotiau.s:2848   .text.HAL_DMA_PollForTransfer:000000000000098c $d
-     /tmp/ccSotiau.s:2865   .text.HAL_DMA_IRQHandler:0000000000000000 $t
-     /tmp/ccSotiau.s:2870   .text.HAL_DMA_IRQHandler:0000000000000000 HAL_DMA_IRQHandler
-     /tmp/ccSotiau.s:3115   .text.HAL_DMA_IRQHandler:00000000000001ac $d
-     /tmp/ccSotiau.s:3129   .text.HAL_DMA_IRQHandler:00000000000001e0 $t
-     /tmp/ccSotiau.s:3376   .text.HAL_DMA_IRQHandler:00000000000003ac $d
-     /tmp/ccSotiau.s:3390   .text.HAL_DMA_IRQHandler:00000000000003e0 $t
-     /tmp/ccSotiau.s:3647   .text.HAL_DMA_IRQHandler:00000000000005b4 $d
-     /tmp/ccSotiau.s:3661   .text.HAL_DMA_IRQHandler:00000000000005e8 $t
-     /tmp/ccSotiau.s:4019   .text.HAL_DMA_IRQHandler:0000000000000880 $d
-     /tmp/ccSotiau.s:4033   .text.HAL_DMA_IRQHandler:00000000000008b4 $t
-     /tmp/ccSotiau.s:4327   .text.HAL_DMA_IRQHandler:0000000000000ad0 $d
-     /tmp/ccSotiau.s:4342   .text.HAL_DMA_IRQHandler:0000000000000b04 $t
-     /tmp/ccSotiau.s:4481   .text.HAL_DMA_IRQHandler:0000000000000bf8 $d
-     /tmp/ccSotiau.s:4497   .text.HAL_DMA_GetState:0000000000000000 $t
-     /tmp/ccSotiau.s:4502   .text.HAL_DMA_GetState:0000000000000000 HAL_DMA_GetState
-     /tmp/ccSotiau.s:4534   .text.HAL_DMA_GetError:0000000000000000 $t
-     /tmp/ccSotiau.s:4539   .text.HAL_DMA_GetError:0000000000000000 HAL_DMA_GetError
-     /tmp/ccSotiau.s:4571   .text.DMA_SetConfig:0000000000000000 $t
+     /tmp/ccWSeizr.s:21     .text.HAL_DMA_Init:0000000000000000 $t
+     /tmp/ccWSeizr.s:26     .text.HAL_DMA_Init:0000000000000000 HAL_DMA_Init
+     /tmp/ccWSeizr.s:141    .text.HAL_DMA_DeInit:0000000000000000 $t
+     /tmp/ccWSeizr.s:146    .text.HAL_DMA_DeInit:0000000000000000 HAL_DMA_DeInit
+     /tmp/ccWSeizr.s:525    .text.HAL_DMA_DeInit:000000000000029c $d
+     /tmp/ccWSeizr.s:539    .text.HAL_DMA_DeInit:00000000000002d0 $t
+     /tmp/ccWSeizr.s:879    .text.HAL_DMA_DeInit:0000000000000540 $d
+     /tmp/ccWSeizr.s:893    .text.HAL_DMA_DeInit:0000000000000574 $t
+     /tmp/ccWSeizr.s:927    .text.HAL_DMA_Start:0000000000000000 $t
+     /tmp/ccWSeizr.s:932    .text.HAL_DMA_Start:0000000000000000 HAL_DMA_Start
+     /tmp/ccWSeizr.s:4575   .text.DMA_SetConfig:0000000000000000 DMA_SetConfig
+     /tmp/ccWSeizr.s:1005   .text.HAL_DMA_Start_IT:0000000000000000 $t
+     /tmp/ccWSeizr.s:1010   .text.HAL_DMA_Start_IT:0000000000000000 HAL_DMA_Start_IT
+     /tmp/ccWSeizr.s:1107   .text.HAL_DMA_Abort:0000000000000000 $t
+     /tmp/ccWSeizr.s:1112   .text.HAL_DMA_Abort:0000000000000000 HAL_DMA_Abort
+     /tmp/ccWSeizr.s:1200   .text.HAL_DMA_Abort_IT:0000000000000000 $t
+     /tmp/ccWSeizr.s:1205   .text.HAL_DMA_Abort_IT:0000000000000000 HAL_DMA_Abort_IT
+     /tmp/ccWSeizr.s:1509   .text.HAL_DMA_Abort_IT:0000000000000208 $d
+     /tmp/ccWSeizr.s:1526   .text.HAL_DMA_PollForTransfer:0000000000000000 $t
+     /tmp/ccWSeizr.s:1531   .text.HAL_DMA_PollForTransfer:0000000000000000 HAL_DMA_PollForTransfer
+     /tmp/ccWSeizr.s:1888   .text.HAL_DMA_PollForTransfer:0000000000000278 $d
+     /tmp/ccWSeizr.s:1901   .text.HAL_DMA_PollForTransfer:00000000000002a8 $t
+     /tmp/ccWSeizr.s:2239   .text.HAL_DMA_PollForTransfer:0000000000000514 $d
+     /tmp/ccWSeizr.s:2253   .text.HAL_DMA_PollForTransfer:0000000000000548 $t
+     /tmp/ccWSeizr.s:2590   .text.HAL_DMA_PollForTransfer:00000000000007a4 $d
+     /tmp/ccWSeizr.s:2605   .text.HAL_DMA_PollForTransfer:00000000000007d8 $t
+     /tmp/ccWSeizr.s:2848   .text.HAL_DMA_PollForTransfer:000000000000098c $d
+     /tmp/ccWSeizr.s:2865   .text.HAL_DMA_IRQHandler:0000000000000000 $t
+     /tmp/ccWSeizr.s:2870   .text.HAL_DMA_IRQHandler:0000000000000000 HAL_DMA_IRQHandler
+     /tmp/ccWSeizr.s:3115   .text.HAL_DMA_IRQHandler:00000000000001ac $d
+     /tmp/ccWSeizr.s:3129   .text.HAL_DMA_IRQHandler:00000000000001e0 $t
+     /tmp/ccWSeizr.s:3376   .text.HAL_DMA_IRQHandler:00000000000003ac $d
+     /tmp/ccWSeizr.s:3390   .text.HAL_DMA_IRQHandler:00000000000003e0 $t
+     /tmp/ccWSeizr.s:3647   .text.HAL_DMA_IRQHandler:00000000000005b4 $d
+     /tmp/ccWSeizr.s:3661   .text.HAL_DMA_IRQHandler:00000000000005e8 $t
+     /tmp/ccWSeizr.s:4019   .text.HAL_DMA_IRQHandler:0000000000000880 $d
+     /tmp/ccWSeizr.s:4033   .text.HAL_DMA_IRQHandler:00000000000008b4 $t
+     /tmp/ccWSeizr.s:4327   .text.HAL_DMA_IRQHandler:0000000000000ad0 $d
+     /tmp/ccWSeizr.s:4342   .text.HAL_DMA_IRQHandler:0000000000000b04 $t
+     /tmp/ccWSeizr.s:4481   .text.HAL_DMA_IRQHandler:0000000000000bf8 $d
+     /tmp/ccWSeizr.s:4497   .text.HAL_DMA_GetState:0000000000000000 $t
+     /tmp/ccWSeizr.s:4502   .text.HAL_DMA_GetState:0000000000000000 HAL_DMA_GetState
+     /tmp/ccWSeizr.s:4534   .text.HAL_DMA_GetError:0000000000000000 $t
+     /tmp/ccWSeizr.s:4539   .text.HAL_DMA_GetError:0000000000000000 HAL_DMA_GetError
+     /tmp/ccWSeizr.s:4571   .text.DMA_SetConfig:0000000000000000 $t
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

@@ -83,6 +83,8 @@ int main(void)
 
   /* USER CODE BEGIN 2 */
 
+  HAL_TIM_Encoder_Start(&htim1, TIM_CHANNEL_1 | TIM_CHANNEL_2);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
