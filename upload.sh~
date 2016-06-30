@@ -1,0 +1,1 @@
+openocd -f interface/stlink-v2.cfg -f board/stm32f3discovery.cfg -c "init" -c "reset init" -c "flash write_image erase build/f3_gyro_encoder_comparison.hex" -c "reset" -c "shutdown"
