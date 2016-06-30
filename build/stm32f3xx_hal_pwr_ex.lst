@@ -1,0 +1,568 @@
+ARM GAS  /tmp/ccDil7rB.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 3
+   4              		.eabi_attribute 28, 1
+   5              		.fpu fpv4-sp-d16
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 6
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.thumb
+  16              		.file	"stm32f3xx_hal_pwr_ex.c"
+  17              		.text
+  18              	.Ltext0:
+  19              		.cfi_sections	.debug_frame
+  20              		.section	.text.HAL_PWR_ConfigPVD,"ax",%progbits
+  21              		.align	2
+  22              		.global	HAL_PWR_ConfigPVD
+  23              		.thumb
+  24              		.thumb_func
+  26              	HAL_PWR_ConfigPVD:
+  27              	.LFB125:
+  28              		.file 1 "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c"
+   1:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /**
+   2:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   ******************************************************************************
+   3:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @file    stm32f3xx_hal_pwr_ex.c
+   4:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @author  MCD Application Team
+   5:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @version V1.2.1
+   6:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @date    29-April-2015
+   7:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @brief   Extended PWR HAL module driver.
+   8:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *          This file provides firmware functions to manage the following
+   9:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *          functionalities of the Power Controller (PWR) peripheral:
+  10:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *           + Extended Initialization and de-initialization functions
+  11:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *           + Extended Peripheral Control functions
+  12:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *         
+  13:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   ******************************************************************************
+  14:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @attention
+  15:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *
+  16:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * <h2><center>&copy; COPYRIGHT(c) 2016 STMicroelectronics</center></h2>
+  17:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *
+  18:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * Redistribution and use in source and binary forms, with or without modification,
+  19:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * are permitted provided that the following conditions are met:
+  20:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *   1. Redistributions of source code must retain the above copyright notice,
+  21:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *      this list of conditions and the following disclaimer.
+  22:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *   2. Redistributions in binary form must reproduce the above copyright notice,
+  23:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *      this list of conditions and the following disclaimer in the documentation
+  24:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *      and/or other materials provided with the distribution.
+  25:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *   3. Neither the name of STMicroelectronics nor the names of its contributors
+  26:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *      may be used to endorse or promote products derived from this software
+  27:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *      without specific prior written permission.
+  28:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *
+  29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ARM GAS  /tmp/ccDil7rB.s 			page 2
+
+
+  31:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  32:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+  33:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  34:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  35:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+  36:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+  37:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  38:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  39:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *
+  40:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   ******************************************************************************
+  41:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   */
+  42:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+  43:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /* Includes ------------------------------------------------------------------*/
+  44:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** #include "stm32f3xx_hal.h"
+  45:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+  46:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /** @addtogroup STM32F3xx_HAL_Driver
+  47:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @{
+  48:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   */
+  49:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+  50:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /** @defgroup PWREx PWREx
+  51:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @brief    PWREx HAL module driver
+  52:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @{
+  53:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   */
+  54:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+  55:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** #ifdef HAL_PWR_MODULE_ENABLED
+  56:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+  57:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /* Private typedef -----------------------------------------------------------*/
+  58:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /* Private define ------------------------------------------------------------*/
+  59:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /** @defgroup PWREx_Private_Constants PWR Extended Private Constants
+  60:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @{
+  61:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   */
+  62:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** #define PVD_MODE_IT               ((uint32_t)0x00010000)
+  63:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** #define PVD_MODE_EVT              ((uint32_t)0x00020000)
+  64:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** #define PVD_RISING_EDGE           ((uint32_t)0x00000001)
+  65:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** #define PVD_FALLING_EDGE          ((uint32_t)0x00000002)
+  66:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /**
+  67:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @}
+  68:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   */
+  69:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****  
+  70:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /* Private macro -------------------------------------------------------------*/
+  71:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /* Private variables ---------------------------------------------------------*/
+  72:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /* Private function prototypes -----------------------------------------------*/
+  73:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /* Exported functions ---------------------------------------------------------*/
+  74:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+  75:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /** @defgroup PWREx_Exported_Functions PWR Extended Exported Functions
+  76:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @{
+  77:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   */
+  78:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+  79:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /** @defgroup PWREx_Exported_Functions_Group1 Peripheral Extended Control Functions
+  80:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *  @brief   Extended Peripheral Control functions
+  81:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *
+  82:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** @verbatim
+  83:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+  84:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****  ===============================================================================
+  85:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****                  ##### Peripheral Extended control functions #####
+  86:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****  ===============================================================================
+  87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     *** PVD configuration (present on all other devices than STM32F3x8 devices) ***
+ARM GAS  /tmp/ccDil7rB.s 			page 3
+
+
+  88:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     =========================
+  89:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     [..]
+  90:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****       (+) The PVD is used to monitor the VDD power supply by comparing it to a
+  91:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           threshold selected by the PVD Level (PLS[2:0] bits in the PWR_CR).
+  92:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****       (+) A PVDO flag is available to indicate if VDD/VDDA is higher or lower
+  93:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           than the PVD threshold. This event is internally connected to the EXTI
+  94:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           line16 and can generate an interrupt if enabled. This is done through
+  95:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           __HAL_PWR_PVD_EXTI_ENABLE_IT() macro
+  96:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****       (+) The PVD is stopped in Standby mode.
+  97:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****       -@- PVD is not available on STM32F3x8 Product Line
+  98:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+  99:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 100:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     *** Voltage regulator ***
+ 101:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     =========================
+ 102:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     [..]
+ 103:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****       (+) The voltage regulator is always enabled after Reset. It works in three different
+ 104:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           modes.
+ 105:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           In Run mode, the regulator supplies full power to the 1.8V domain (core, memories
+ 106:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           and digital peripherals).
+ 107:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           In Stop mode, the regulator supplies low power to the 1.8V domain, preserving
+ 108:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           contents of registers and SRAM.
+ 109:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           In Stop mode, the regulator is powered off. The contents of the registers and SRAM
+ 110:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           are lost except for the Standby circuitry and the Backup Domain.
+ 111:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           Note: in the STM32F3x8xx devices, the voltage regulator is bypassed and the
+ 112:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           microcontroller must be powered from a nominal VDD = 1.8V +/-8% voltage.
+ 113:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 114:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 115:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****       (+) A PVDO flag is available to indicate if VDD/VDDA is higher or lower
+ 116:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           than the PVD threshold. This event is internally connected to the EXTI
+ 117:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           line16 and can generate an interrupt if enabled. This is done through
+ 118:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           __HAL_PWR_PVD_EXTI_ENABLE_IT() macro
+ 119:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****       (+) The PVD is stopped in Standby mode.
+ 120:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 121:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 122:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     *** SDADC power configuration ***
+ 123:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     ================================
+ 124:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     [..]
+ 125:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****       (+) On STM32F373xC/STM32F378xx devices, there are up to 
+ 126:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           3 SDADC instances that can be enabled/disabled.
+ 127:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 128:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** @endverbatim
+ 129:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @{
+ 130:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   */
+ 131:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 132:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** #if defined(STM32F302xE) || defined(STM32F303xE) || \
+ 133:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     defined(STM32F302xC) || defined(STM32F303xC) || \
+ 134:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     defined(STM32F303x8) || defined(STM32F334x8) || \
+ 135:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     defined(STM32F301x8) || defined(STM32F302x8) || \
+ 136:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     defined(STM32F373xC)
+ 137:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 138:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /**
+ 139:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @brief Configures the voltage threshold detected by the Power Voltage Detector(PVD).
+ 140:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @param sConfigPVD: pointer to an PWR_PVDTypeDef structure that contains the configuration
+ 141:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *        information for the PVD.
+ 142:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @note Refer to the electrical characteristics of your device datasheet for
+ 143:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *         more details about the voltage threshold corresponding to each
+ 144:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   *         detection level.
+ARM GAS  /tmp/ccDil7rB.s 			page 4
+
+
+ 145:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @retval None
+ 146:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   */
+ 147:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** void HAL_PWR_ConfigPVD(PWR_PVDTypeDef *sConfigPVD)
+ 148:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** {
+  29              		.loc 1 148 0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 8
+  32              		@ frame_needed = 1, uses_anonymous_args = 0
+  33              		@ link register save eliminated.
+  34 0000 80B4     		push	{r7}
+  35              	.LCFI0:
+  36              		.cfi_def_cfa_offset 4
+  37              		.cfi_offset 7, -4
+  38 0002 83B0     		sub	sp, sp, #12
+  39              	.LCFI1:
+  40              		.cfi_def_cfa_offset 16
+  41 0004 00AF     		add	r7, sp, #0
+  42              	.LCFI2:
+  43              		.cfi_def_cfa_register 7
+  44 0006 7860     		str	r0, [r7, #4]
+ 149:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   /* Check the parameters */
+ 150:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   assert_param(IS_PWR_PVD_LEVEL(sConfigPVD->PVDLevel));
+ 151:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   assert_param(IS_PWR_PVD_MODE(sConfigPVD->Mode));
+ 152:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 153:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   /* Set PLS[7:5] bits according to PVDLevel value */
+ 154:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   MODIFY_REG(PWR->CR, PWR_CR_PLS, sConfigPVD->PVDLevel);
+  45              		.loc 1 154 0
+  46 0008 2A4B     		ldr	r3, .L6
+  47 000a 2A4A     		ldr	r2, .L6
+  48 000c 1268     		ldr	r2, [r2]
+  49 000e 22F0E001 		bic	r1, r2, #224
+  50 0012 7A68     		ldr	r2, [r7, #4]
+  51 0014 1268     		ldr	r2, [r2]
+  52 0016 0A43     		orrs	r2, r2, r1
+  53 0018 1A60     		str	r2, [r3]
+ 155:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   
+ 156:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   /* Clear any previous config. Keep it clear if no event or IT mode is selected */
+ 157:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   __HAL_PWR_PVD_EXTI_DISABLE_EVENT();
+  54              		.loc 1 157 0
+  55 001a 274B     		ldr	r3, .L6+4
+  56 001c 264A     		ldr	r2, .L6+4
+  57 001e 5268     		ldr	r2, [r2, #4]
+  58 0020 22F48032 		bic	r2, r2, #65536
+  59 0024 5A60     		str	r2, [r3, #4]
+ 158:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   __HAL_PWR_PVD_EXTI_DISABLE_IT();
+  60              		.loc 1 158 0
+  61 0026 244B     		ldr	r3, .L6+4
+  62 0028 234A     		ldr	r2, .L6+4
+  63 002a 1268     		ldr	r2, [r2]
+  64 002c 22F48032 		bic	r2, r2, #65536
+  65 0030 1A60     		str	r2, [r3]
+ 159:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   __HAL_PWR_PVD_EXTI_DISABLE_RISING_EDGE();__HAL_PWR_PVD_EXTI_DISABLE_FALLING_EDGE();
+  66              		.loc 1 159 0
+  67 0032 214B     		ldr	r3, .L6+4
+  68 0034 204A     		ldr	r2, .L6+4
+  69 0036 9268     		ldr	r2, [r2, #8]
+  70 0038 22F48032 		bic	r2, r2, #65536
+ARM GAS  /tmp/ccDil7rB.s 			page 5
+
+
+  71 003c 9A60     		str	r2, [r3, #8]
+  72 003e 1E4B     		ldr	r3, .L6+4
+  73 0040 1D4A     		ldr	r2, .L6+4
+  74 0042 D268     		ldr	r2, [r2, #12]
+  75 0044 22F48032 		bic	r2, r2, #65536
+  76 0048 DA60     		str	r2, [r3, #12]
+ 160:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 161:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   /* Configure interrupt mode */
+ 162:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   if((sConfigPVD->Mode & PVD_MODE_IT) == PVD_MODE_IT)
+  77              		.loc 1 162 0
+  78 004a 7B68     		ldr	r3, [r7, #4]
+  79 004c 5B68     		ldr	r3, [r3, #4]
+  80 004e 03F48033 		and	r3, r3, #65536
+  81 0052 002B     		cmp	r3, #0
+  82 0054 05D0     		beq	.L2
+ 163:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   {
+ 164:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     __HAL_PWR_PVD_EXTI_ENABLE_IT();
+  83              		.loc 1 164 0
+  84 0056 184B     		ldr	r3, .L6+4
+  85 0058 174A     		ldr	r2, .L6+4
+  86 005a 1268     		ldr	r2, [r2]
+  87 005c 42F48032 		orr	r2, r2, #65536
+  88 0060 1A60     		str	r2, [r3]
+  89              	.L2:
+ 165:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   }
+ 166:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   
+ 167:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   /* Configure event mode */
+ 168:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   if((sConfigPVD->Mode & PVD_MODE_EVT) == PVD_MODE_EVT)
+  90              		.loc 1 168 0
+  91 0062 7B68     		ldr	r3, [r7, #4]
+  92 0064 5B68     		ldr	r3, [r3, #4]
+  93 0066 03F40033 		and	r3, r3, #131072
+  94 006a 002B     		cmp	r3, #0
+  95 006c 05D0     		beq	.L3
+ 169:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   {
+ 170:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     __HAL_PWR_PVD_EXTI_ENABLE_EVENT();
+  96              		.loc 1 170 0
+  97 006e 124B     		ldr	r3, .L6+4
+  98 0070 114A     		ldr	r2, .L6+4
+  99 0072 5268     		ldr	r2, [r2, #4]
+ 100 0074 42F48032 		orr	r2, r2, #65536
+ 101 0078 5A60     		str	r2, [r3, #4]
+ 102              	.L3:
+ 171:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   }
+ 172:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   
+ 173:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   /* Configure the edge */
+ 174:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   if((sConfigPVD->Mode & PVD_RISING_EDGE) == PVD_RISING_EDGE)
+ 103              		.loc 1 174 0
+ 104 007a 7B68     		ldr	r3, [r7, #4]
+ 105 007c 5B68     		ldr	r3, [r3, #4]
+ 106 007e 03F00103 		and	r3, r3, #1
+ 107 0082 002B     		cmp	r3, #0
+ 108 0084 05D0     		beq	.L4
+ 175:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   {
+ 176:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     __HAL_PWR_PVD_EXTI_ENABLE_RISING_EDGE();
+ 109              		.loc 1 176 0
+ 110 0086 0C4B     		ldr	r3, .L6+4
+ARM GAS  /tmp/ccDil7rB.s 			page 6
+
+
+ 111 0088 0B4A     		ldr	r2, .L6+4
+ 112 008a 9268     		ldr	r2, [r2, #8]
+ 113 008c 42F48032 		orr	r2, r2, #65536
+ 114 0090 9A60     		str	r2, [r3, #8]
+ 115              	.L4:
+ 177:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   }
+ 178:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   
+ 179:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   if((sConfigPVD->Mode & PVD_FALLING_EDGE) == PVD_FALLING_EDGE)
+ 116              		.loc 1 179 0
+ 117 0092 7B68     		ldr	r3, [r7, #4]
+ 118 0094 5B68     		ldr	r3, [r3, #4]
+ 119 0096 03F00203 		and	r3, r3, #2
+ 120 009a 002B     		cmp	r3, #0
+ 121 009c 05D0     		beq	.L1
+ 180:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   {
+ 181:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     __HAL_PWR_PVD_EXTI_ENABLE_FALLING_EDGE();
+ 122              		.loc 1 181 0
+ 123 009e 064B     		ldr	r3, .L6+4
+ 124 00a0 054A     		ldr	r2, .L6+4
+ 125 00a2 D268     		ldr	r2, [r2, #12]
+ 126 00a4 42F48032 		orr	r2, r2, #65536
+ 127 00a8 DA60     		str	r2, [r3, #12]
+ 128              	.L1:
+ 182:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   }
+ 183:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** }
+ 129              		.loc 1 183 0
+ 130 00aa 0C37     		adds	r7, r7, #12
+ 131 00ac BD46     		mov	sp, r7
+ 132              		@ sp needed
+ 133 00ae 5DF8047B 		ldr	r7, [sp], #4
+ 134 00b2 7047     		bx	lr
+ 135              	.L7:
+ 136              		.align	2
+ 137              	.L6:
+ 138 00b4 00700040 		.word	1073770496
+ 139 00b8 00040140 		.word	1073808384
+ 140              		.cfi_endproc
+ 141              	.LFE125:
+ 143              		.section	.text.HAL_PWR_EnablePVD,"ax",%progbits
+ 144              		.align	2
+ 145              		.global	HAL_PWR_EnablePVD
+ 146              		.thumb
+ 147              		.thumb_func
+ 149              	HAL_PWR_EnablePVD:
+ 150              	.LFB126:
+ 184:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 185:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /**
+ 186:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @brief Enables the Power Voltage Detector(PVD).
+ 187:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @retval None
+ 188:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   */
+ 189:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** void HAL_PWR_EnablePVD(void)
+ 190:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** {
+ 151              		.loc 1 190 0
+ 152              		.cfi_startproc
+ 153              		@ args = 0, pretend = 0, frame = 0
+ 154              		@ frame_needed = 1, uses_anonymous_args = 0
+ 155              		@ link register save eliminated.
+ARM GAS  /tmp/ccDil7rB.s 			page 7
+
+
+ 156 0000 80B4     		push	{r7}
+ 157              	.LCFI3:
+ 158              		.cfi_def_cfa_offset 4
+ 159              		.cfi_offset 7, -4
+ 160 0002 00AF     		add	r7, sp, #0
+ 161              	.LCFI4:
+ 162              		.cfi_def_cfa_register 7
+ 191:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   SET_BIT(PWR->CR, PWR_CR_PVDE);  
+ 163              		.loc 1 191 0
+ 164 0004 044B     		ldr	r3, .L9
+ 165 0006 044A     		ldr	r2, .L9
+ 166 0008 1268     		ldr	r2, [r2]
+ 167 000a 42F01002 		orr	r2, r2, #16
+ 168 000e 1A60     		str	r2, [r3]
+ 192:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** }
+ 169              		.loc 1 192 0
+ 170 0010 BD46     		mov	sp, r7
+ 171              		@ sp needed
+ 172 0012 5DF8047B 		ldr	r7, [sp], #4
+ 173 0016 7047     		bx	lr
+ 174              	.L10:
+ 175              		.align	2
+ 176              	.L9:
+ 177 0018 00700040 		.word	1073770496
+ 178              		.cfi_endproc
+ 179              	.LFE126:
+ 181              		.section	.text.HAL_PWR_DisablePVD,"ax",%progbits
+ 182              		.align	2
+ 183              		.global	HAL_PWR_DisablePVD
+ 184              		.thumb
+ 185              		.thumb_func
+ 187              	HAL_PWR_DisablePVD:
+ 188              	.LFB127:
+ 193:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 194:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /**
+ 195:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @brief Disables the Power Voltage Detector(PVD).
+ 196:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @retval None
+ 197:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   */
+ 198:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** void HAL_PWR_DisablePVD(void)
+ 199:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** {
+ 189              		.loc 1 199 0
+ 190              		.cfi_startproc
+ 191              		@ args = 0, pretend = 0, frame = 0
+ 192              		@ frame_needed = 1, uses_anonymous_args = 0
+ 193              		@ link register save eliminated.
+ 194 0000 80B4     		push	{r7}
+ 195              	.LCFI5:
+ 196              		.cfi_def_cfa_offset 4
+ 197              		.cfi_offset 7, -4
+ 198 0002 00AF     		add	r7, sp, #0
+ 199              	.LCFI6:
+ 200              		.cfi_def_cfa_register 7
+ 200:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   CLEAR_BIT(PWR->CR, PWR_CR_PVDE);  
+ 201              		.loc 1 200 0
+ 202 0004 044B     		ldr	r3, .L12
+ 203 0006 044A     		ldr	r2, .L12
+ 204 0008 1268     		ldr	r2, [r2]
+ARM GAS  /tmp/ccDil7rB.s 			page 8
+
+
+ 205 000a 22F01002 		bic	r2, r2, #16
+ 206 000e 1A60     		str	r2, [r3]
+ 201:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** }
+ 207              		.loc 1 201 0
+ 208 0010 BD46     		mov	sp, r7
+ 209              		@ sp needed
+ 210 0012 5DF8047B 		ldr	r7, [sp], #4
+ 211 0016 7047     		bx	lr
+ 212              	.L13:
+ 213              		.align	2
+ 214              	.L12:
+ 215 0018 00700040 		.word	1073770496
+ 216              		.cfi_endproc
+ 217              	.LFE127:
+ 219              		.section	.text.HAL_PWR_PVD_IRQHandler,"ax",%progbits
+ 220              		.align	2
+ 221              		.global	HAL_PWR_PVD_IRQHandler
+ 222              		.thumb
+ 223              		.thumb_func
+ 225              	HAL_PWR_PVD_IRQHandler:
+ 226              	.LFB128:
+ 202:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 203:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /**
+ 204:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @brief This function handles the PWR PVD interrupt request.
+ 205:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @note This API should be called under the PVD_IRQHandler().
+ 206:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @retval None
+ 207:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   */
+ 208:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** void HAL_PWR_PVD_IRQHandler(void)
+ 209:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** {
+ 227              		.loc 1 209 0
+ 228              		.cfi_startproc
+ 229              		@ args = 0, pretend = 0, frame = 0
+ 230              		@ frame_needed = 1, uses_anonymous_args = 0
+ 231 0000 80B5     		push	{r7, lr}
+ 232              	.LCFI7:
+ 233              		.cfi_def_cfa_offset 8
+ 234              		.cfi_offset 7, -8
+ 235              		.cfi_offset 14, -4
+ 236 0002 00AF     		add	r7, sp, #0
+ 237              	.LCFI8:
+ 238              		.cfi_def_cfa_register 7
+ 210:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   /* Check PWR exti flag */
+ 211:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   if(__HAL_PWR_PVD_EXTI_GET_FLAG() != RESET)
+ 239              		.loc 1 211 0
+ 240 0004 064B     		ldr	r3, .L16
+ 241 0006 5B69     		ldr	r3, [r3, #20]
+ 242 0008 03F48033 		and	r3, r3, #65536
+ 243 000c 002B     		cmp	r3, #0
+ 244 000e 05D0     		beq	.L14
+ 212:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   {
+ 213:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     /* PWR PVD interrupt user callback */
+ 214:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     HAL_PWR_PVDCallback();
+ 245              		.loc 1 214 0
+ 246 0010 FFF7FEFF 		bl	HAL_PWR_PVDCallback
+ 215:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 216:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     /* Clear PWR Exti pending bit */
+ 217:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     __HAL_PWR_PVD_EXTI_CLEAR_FLAG();
+ARM GAS  /tmp/ccDil7rB.s 			page 9
+
+
+ 247              		.loc 1 217 0
+ 248 0014 024B     		ldr	r3, .L16
+ 249 0016 4FF48032 		mov	r2, #65536
+ 250 001a 5A61     		str	r2, [r3, #20]
+ 251              	.L14:
+ 218:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   }
+ 219:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** }
+ 252              		.loc 1 219 0
+ 253 001c 80BD     		pop	{r7, pc}
+ 254              	.L17:
+ 255 001e 00BF     		.align	2
+ 256              	.L16:
+ 257 0020 00040140 		.word	1073808384
+ 258              		.cfi_endproc
+ 259              	.LFE128:
+ 261              		.section	.text.HAL_PWR_PVDCallback,"ax",%progbits
+ 262              		.align	2
+ 263              		.weak	HAL_PWR_PVDCallback
+ 264              		.thumb
+ 265              		.thumb_func
+ 267              	HAL_PWR_PVDCallback:
+ 268              	.LFB129:
+ 220:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
+ 221:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /**
+ 222:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @brief PWR PVD interrupt callback
+ 223:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @retval None
+ 224:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   */
+ 225:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** __weak void HAL_PWR_PVDCallback(void)
+ 226:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** {
+ 269              		.loc 1 226 0
+ 270              		.cfi_startproc
+ 271              		@ args = 0, pretend = 0, frame = 0
+ 272              		@ frame_needed = 1, uses_anonymous_args = 0
+ 273              		@ link register save eliminated.
+ 274 0000 80B4     		push	{r7}
+ 275              	.LCFI9:
+ 276              		.cfi_def_cfa_offset 4
+ 277              		.cfi_offset 7, -4
+ 278 0002 00AF     		add	r7, sp, #0
+ 279              	.LCFI10:
+ 280              		.cfi_def_cfa_register 7
+ 227:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   /* NOTE : This function Should not be modified, when the callback is needed,
+ 228:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****             the HAL_PWR_PVDCallback could be implemented in the user file
+ 229:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****    */
+ 230:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** }
+ 281              		.loc 1 230 0
+ 282 0004 BD46     		mov	sp, r7
+ 283              		@ sp needed
+ 284 0006 5DF8047B 		ldr	r7, [sp], #4
+ 285 000a 7047     		bx	lr
+ 286              		.cfi_endproc
+ 287              	.LFE129:
+ 289              		.text
+ 290              	.Letext0:
+ 291              		.file 2 "/usr/include/newlib/machine/_default_types.h"
+ 292              		.file 3 "/usr/include/newlib/stdint.h"
+ 293              		.file 4 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h"
+ARM GAS  /tmp/ccDil7rB.s 			page 10
+
+
+ 294              		.file 5 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h"
+ 295              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h"
+ 296              		.file 7 "Drivers/CMSIS/Include/core_cm4.h"
+ARM GAS  /tmp/ccDil7rB.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 stm32f3xx_hal_pwr_ex.c
+     /tmp/ccDil7rB.s:21     .text.HAL_PWR_ConfigPVD:0000000000000000 $t
+     /tmp/ccDil7rB.s:26     .text.HAL_PWR_ConfigPVD:0000000000000000 HAL_PWR_ConfigPVD
+     /tmp/ccDil7rB.s:138    .text.HAL_PWR_ConfigPVD:00000000000000b4 $d
+     /tmp/ccDil7rB.s:144    .text.HAL_PWR_EnablePVD:0000000000000000 $t
+     /tmp/ccDil7rB.s:149    .text.HAL_PWR_EnablePVD:0000000000000000 HAL_PWR_EnablePVD
+     /tmp/ccDil7rB.s:177    .text.HAL_PWR_EnablePVD:0000000000000018 $d
+     /tmp/ccDil7rB.s:182    .text.HAL_PWR_DisablePVD:0000000000000000 $t
+     /tmp/ccDil7rB.s:187    .text.HAL_PWR_DisablePVD:0000000000000000 HAL_PWR_DisablePVD
+     /tmp/ccDil7rB.s:215    .text.HAL_PWR_DisablePVD:0000000000000018 $d
+     /tmp/ccDil7rB.s:220    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 $t
+     /tmp/ccDil7rB.s:225    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 HAL_PWR_PVD_IRQHandler
+     /tmp/ccDil7rB.s:267    .text.HAL_PWR_PVDCallback:0000000000000000 HAL_PWR_PVDCallback
+     /tmp/ccDil7rB.s:257    .text.HAL_PWR_PVD_IRQHandler:0000000000000020 $d
+     /tmp/ccDil7rB.s:262    .text.HAL_PWR_PVDCallback:0000000000000000 $t
+                     .debug_frame:0000000000000010 $d
+
+NO UNDEFINED SYMBOLS
